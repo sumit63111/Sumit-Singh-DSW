@@ -62,12 +62,16 @@ The EDA phase involves:
 
 The following models were implemented:
 
-1. **Random Forest**: Achieved an accuracy of **80%**.
-2. **Logistic Regression**: Achieved an accuracy of **65%**.
-3. **AdaBoost**: Achieved an accuracy of **77%**.
+1. **AdaBoost**: Achieved an accuracy of **77%**
+2. **Logistic Regression**: Achieved an accuracy of **74%**.
+3. **Random Forest**: It ranges between **76 80%**
 
 ---
 
 ## Model Selection
 
-A separate file, `model_selection.ipynb`, is included in this repository. This script automatically selects the model with the highest accuracy, which in this case is the **Random Forest model**. The selected model is saved for deployment.
+A separate file, `model_selection.ipynb`, is included in this repository. This script automatically selects the model with the highest accuracy, 
+As their are minor differnce in a accuray of random forest and adaboost
+
+so when randomforest accuracy is 76 then it will select the **Adaboost** as preferred model.
+if its greater than 76% then it will select **Random forest**.
